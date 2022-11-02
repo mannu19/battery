@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: brown;
+}
+.wrapper{
+    width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin-top: 100px;
+    margin-left: 400px;
+    position: relative;
+}
+.text{
+    display: flex;
+    text-align: center;
+    position: absolute;
+    top: 150px;
+}
+.battery{
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    top: 120px;
+    border: 6px solid yellow;
+}
+.kundi{
+    width: 20px;
+    height: 20px;
+    border: 5px solid yellow;
+    position: absolute;
+    top: 160px;
+    left: 450px;
+}
+.yellow {
+    width: 0;
+    height: 64px;
+    border: 2px solid yellow;
+    position: absolute;
+    top: 138px;
+    left: 74px;
+    background-color: yellow;
+    transition-property: right;
+    transition-duration: 0.5s;
+    animation: gulshan 5s 0s ease-out infinite;
+}
+
+@keyframes gulshan {
+    0%{width: 0;}
+    25%{width: 15%;}
+    50%{width: 40%;}
+    75%{width: 60%;}
+    100%{width: 70%;}
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 250px;
+    border: 2px solid black;
+    border-radius: 10%;
+    color: white;
+    background-color: black;
+    animation: dance 0.5s 0s ease-out infinite ;
+}
+@keyframes dance {
+    0%{transform: scaleY(0deg);}
+    25%{transform: skewY(5deg);}
+    50%{transform: skewY(5deg);}
+    75%{transform: skewY(8deg);}
+    100%{transform: skewY(0deg);}    
+}
+
+
